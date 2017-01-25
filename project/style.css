@@ -1,0 +1,286 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+/*초기화*/
+html,body,div,header,nav,section,aside,article,footer,figure,
+figcaption,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,fieldset{
+	margin:0;
+	padding:0;
+}
+input,button,select,textarea {
+  font-family: inherit;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+	color:inherit;
+}
+a:hover,a:focus{
+	color:#03a67b;
+}
+.hidden{
+    position:absolute;
+    left:-9999em;
+  }
+
+ p{
+ 	color:rgba(51, 51, 51, 0.6);
+ 	font-size:1.6rem;
+ }
+ *{
+	 box-sizing:border-box;
+ }
+	/*float 해제*/
+nav::after{
+		content:"";
+		display:block;
+		clear:both;
+	}
+
+html{
+	font-size:10px;
+ }
+body{
+    font-family: 'Poppins', sans-serif;
+		font-size:1.4rem;
+		color:#333333;
+  }
+body .wrap{
+	width:100%
+	height:auto;
+}
+header,main,section,footer{
+	width:1440px;
+	margin:0 auto;
+}
+header{
+	padding:70px 150px 0 70px;
+
+}
+header .logo {
+	display: inline-block;
+
+}
+nav{
+	display: inline-block;
+
+}
+
+.menu-list li {
+	float:left;
+	margin-left: 15px;
+}
+
+.member{
+	text-align:right;
+	margin-top:-45px;
+
+}
+.member-list li,.member-list li a{
+	display: inline-block;
+
+}
+.member-list li a{
+margin-left:15px;
+}
+
+.member-list .signup-btn{
+	padding:10px 36px;
+	border:1px solid #03a67b;
+	border-radius:4px;
+	font-weight:500;
+	color:#03a67b;
+}
+.signup-btn:hover{
+	font-weight:600;
+}
+/*section::after{
+	content:"";
+	display:inline-block;
+	background:#ebebeb;
+	width:100%;
+	height:1px;
+	margin-top:100%;
+}*/
+section{
+	border-bottom:1px solid #ebebeb;
+}
+section h2{
+	font-size:44px;
+	font-weight:600;
+	 }
+.intro{
+	position: relative;
+	height:700px;
+
+}
+.subscribe{
+	display: block;
+	width:530px;
+	position: absolute;
+	top:300px;
+	left:70px;
+
+}
+.subscribe h2{
+	font-size:52px;
+	font-weight:600;
+ }
+.subscribe input{
+	width:292px;
+	height:50px;
+	border:0;
+	margin-right:-4px;
+	background: #ebebeb;
+	padding-left:20px;
+	box-sizing:border-box;
+	border-radius:4px;
+}
+.green-btn{
+	width:200px;
+	height:50px;
+	background: #03a67b;
+	color:#fff;
+	border:0;
+	letter-spacing: 3px;
+	border-radius:4px;
+}
+.white-btn{
+	width:200px;
+	height:50px;
+	background:#fff ;
+	color:#03a67b;
+	border:1px solid #03a67b;
+	letter-spacing: 3px;
+	border-radius:4px;
+	margin-left:15px;
+}
+.green-btn:hover,.green-btn:focus{
+	background:#fff ;
+	color:#03a67b;
+	border:1px solid #03a67b;
+}
+.white-btn:hover,.white-btn:focus{
+	background: #03a67b;
+	color:#fff;
+	border:0;
+}
+.intro p{
+	margin-bottom:30px;
+}
+.intro p img {
+	position: absolute;
+	top:60px;
+	right:280px;
+}
+
+.features{
+text-align: center;
+padding-top:104px;
+}
+.features img {
+	margin-top:41px;
+	margin-bottom:93px;
+}
+
+.features-brief{
+	width:685px;
+	margin:auto;
+}
+
+.features-list {
+	margin: 50px 0 217px 0;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+.features-list li{
+	display: inline-block;
+	width:312px;
+}
+.features-list li p {
+	margin-top: 25px;
+}
+/*span태그*/
+.title-bold {
+	color:#333333;
+	font-size:1.4rem;
+	font-weight:600;
+}
+.sub-gray{
+	color:rgba(51, 51, 51, 0.25);
+	font-size:1.6rem;
+	font-weight:500;
+	letter-spacing: normal;
+}
+	.features-list li::before {
+	content:url(img/check-icon.png);
+	display: inline-block;
+}
+.cta{
+	text-align: center;
+	padding-top:104px;
+}
+.cta-brief{
+	width:550px;
+	margin:30px auto;
+}
+.btn-group{
+	margin-bottom:100px;
+}
+.client{
+	text-align: center;
+	padding-top:99px;
+}
+.client-brief{
+	width:685px;
+	margin:30px auto;
+}
+.client-list {
+	margin: 66px 0 96px 0;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+.client-list li::before {
+	content:url(img/user-icon.png);
+	display: inline-block;
+}
+.client-list li{
+	display: inline-block;
+	width:281px;
+}
+footer{
+	padding:70px 152px 70px 150px;
+}
+footer small{
+color:rgba(51, 51, 51, 0.7);
+}
+.footer-menu{
+		text-align: center;
+		margin-top:-20px ;
+}
+.footer-menu li,.footer-menu li a{
+	display: inline-block;
+	}
+	.footer-menu li a{
+		margin-right:10px;
+		font-size:14px;
+		font-weight:600;
+		letter-spacing: -0.1px;
+	}
+
+	.social{
+			text-align: right;
+			margin-top:-20px ;
+	}
+	.social li,.social li a{
+		display: inline-block;
+		}
+		.social li a{
+			margin-right:10px;
+			letter-spacing: -0.1px;
+		}
